@@ -6,53 +6,80 @@ http://icant.co.uk/articles/domessentials/
 */
 
 /* 1. Cibler l'élément d'id nav */
+let eNav = document.getElementById("nav");
 
 
 /* 2. Récupérer tous les li */
 
+let eLis = document.getElementsByTagName("li");
+
 
 /* 3. Cibler le 4e li */
+
+let eLi4 = eLis[3];
 
 
 /* 4. Compter le nombre de li dans la page */
 
+let eLisNb = document.querySelectorAll("li").length;
+
 
 /* 5. Cibler le premier li pair */
+
+let eLiPair = document.querySelector("li.pair");
 
 
 /* 6. Récupérer tous les li de classe impair */
 
+let eLisImpair = document.querySelectorAll("li.impair");
+
 
 /* a) afficher ce qu'on obtient */
 
+console.log(eNav);
+console.log(eLis);
+console.log(eLi4);
+console.log(eLisNb);
+console.log(eLiPair);
+console.log(eLisImpair);
 
 /* b) afficher le 2e li de classe impair */
 
+console.log(eLisImpair[1]);
 
 /* c) afficher chacun des li impair */
 
-
+console.log(eLisImpair);
 
 /* d) compter le nombre de li de classe impair dans la page */
 
-
+console.log(eLisImpair.length);
 
 /* 7. Cibler le 4e li puis, à partir de là, cibler son frère juste avant lui */
 
+let eLi3 = eLi4.previousElementSibling;
 
 
 /* 8. Cibler le 4e li puis, à partir de là, cibler le suivant */
 
+let eLi5 = eLi4.nextElementSibling;
 
 
 /* 9. Cibler le parent du 4e li */
 
+let eUl = eLi4.parentNode;
 
 
 /* 10. Récupérer tous les enfants de l'ul */
 
+let eUls = document.getElementsByTagName("ul");
 
 /* a) afficher ce qu'on obtient */
+
+console.log(eLi3);
+console.log(eLi5);
+console.log(eUl);
+console.log(eUls);
 
 /* b) cibler le 1er enfant de l'ul */
 
@@ -66,6 +93,7 @@ http://icant.co.uk/articles/domessentials/
 
 /* 11. Chaînage de méthodes - que retournent les expressions suivantes ? */
 /* a) document.getElementById("nav"). getElementsByTagName("li")[3].firstChild */
+
 
 
 /* b) document. getElementsByTagName("li")[2].childNodes[3].firstChild */

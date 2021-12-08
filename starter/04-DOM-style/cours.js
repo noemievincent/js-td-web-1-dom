@@ -35,6 +35,16 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
 	* centrez-y le texte ;
 */
 
+let eP = document.querySelector("p");
+
+eP.style.color = "#813050";
+eP.style.margin = "1em 0";
+eP.style.backgroundColor = "#D8EFE3";
+eP.style.padding = "0.5em";
+eP.style.fontFamily = "Baskerville, Baskerville Old Face, Garamond, Hoefler Text, Times New Roman, serif";
+eP.style.fontSize = "2em";
+eP.style.width = "5em";
+eP.style.textAlign = "center";
 
 
 
@@ -50,8 +60,10 @@ elle ne permet donc pas d'accéder aux styles qui se trouvent dans une feuille d
 Affichez la couleur du texte de chacun des trois paragraphes de la page
 */
 
-// 1. Les limites de la propriété style
-
+let ePs = document.getElementsByTagName("p");
+console.log(ePs[0].style.color);
+console.log(ePs[1].style.color);
+console.log(ePs[2].style.color);
 
 
 // 2. La fonction getComputedStyle()
@@ -64,3 +76,7 @@ La fonction window.getComputedStyle() (https://developer.mozilla.org/fr/docs/Web
 /* EXEFCICE 3 :
 Affichez la police de caractère et la couleur du 3e paragraphe (qui a l'id "para")
 */
+
+let ePs2 = getComputedStyle(document.getElementById("para"));
+console.log(ePs2.fontFamily);
+console.log(ePs2.color);

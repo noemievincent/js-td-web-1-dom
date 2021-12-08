@@ -23,8 +23,14 @@ EXERCICE 1 :
 3. Vider la liste de tout son contenu et la réafficher
 */
 
+let ulElt = document.querySelector("ul#langages");
+console.log(ulElt);
 
+ulElt.innerHTML += "<li id='c'>C</li>";
+console.log(ulElt);
 
+// ulElt.innerHTML = "";
+// console.log(ulElt);
 
 
 // 2. Le contenu textuel
@@ -37,7 +43,7 @@ Compléter le titre du document pour qu'il devienne
 "Quelques langages de programmation" et le réafficher
 */
 
-
+document.querySelector("h1").textContent += " de programmation";
 
 
 // 3. Les attributs
@@ -54,8 +60,9 @@ EXERCICE 3 :
 	- via la propriété id de l'élément h1
 */
 
-
-
+let titreElt = document.querySelector("h1");
+titreElt.setAttribute("id", "titre");
+// titreElt.id = "titre";
 
 // 4. Les classes
 /*
@@ -73,7 +80,9 @@ EXERCICE 4 :
 - L'afficher
 */
 
-
+titreElt.classList.remove("debut");
+titreElt.classList.add("titre");
+console.log(titreElt);
 
 
 /*
@@ -85,7 +94,8 @@ EXERCICE 5 :
 - Retester le script
 */
 
-
+let liElt = document.querySelector("li");
+liElt.classList.toggle("hide");
 
 
 

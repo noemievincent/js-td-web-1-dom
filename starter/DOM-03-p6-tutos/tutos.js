@@ -14,3 +14,7 @@ Vous disposez d’un fichier HTML qui contient une nav.
 		avec le texte qui précède le lien dans l’énoncé ci-dessus)
 AIDE : Utilisez une boucle for/in pour parcourir l'objet tutos
 */
+
+let oTutos = {
+
+}

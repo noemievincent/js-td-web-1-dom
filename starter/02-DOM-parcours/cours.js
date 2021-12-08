@@ -15,7 +15,7 @@ de notre page web en utilisant la propriété childNodes
 (Aide : il s'agit du deuxième nœud enfant du sixième nœud enfant du nœud body)
 */
 
-
+console.log(document.body.childNodes[5].childNodes[1]);
 
 // 2. Sélection d'éléments selon leur balise
 /*
@@ -26,6 +26,11 @@ en utilisant la méthode getElementsByTagName()
 - Afficher le nombre de titres h2 dans le document
 */
 
+let eH2s = document.getElementsByTagName("h2");
+let eH2 = eH2s[0];
+
+console.log(eH2);
+console.log(eH2s.length);
 
 
 // 3. Sélection d'éléments selon leur classe

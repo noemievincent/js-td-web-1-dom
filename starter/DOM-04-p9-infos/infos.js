@@ -10,3 +10,9 @@ et affichez les deux informations dans une liste
 (un item pour la largeur et un item pour la hauteur)
 que vous insérez dans la section d'id "infos" après le titre
 */
+
+let contenuElt = getComputedStyle(document.getElementById("contenu"));
+let largeurElt = contenuElt.width;
+let hauteurElt = contenuElt.height;
+
+document.getElementById("infos").insertAdjacentHTML("beforeend", `<ul><li>largeur : ${largeurElt}</li><li>hauteur : ${hauteurElt}</li></ul>`);
